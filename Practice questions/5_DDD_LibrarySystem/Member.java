@@ -2,8 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-// Member Entity - Cannot be modified directly from outside
-// Part of Library Aggregate
+
 public class Member {
     private final String memberId;
     private final String name;
@@ -18,7 +17,7 @@ public class Member {
         this.email = email;
         this.borrowedBookIsbns = new ArrayList<>();
     }
-    
+
     // Package-private - only Library (aggregate root) can modify
     void addBorrowedBook(String isbn) {
         borrowedBookIsbns.add(isbn);

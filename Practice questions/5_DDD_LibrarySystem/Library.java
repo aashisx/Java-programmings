@@ -2,9 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Collections;
 
-// Library - Aggregate Root
-// All modifications to Book and Member go through Library
-// Enforces all business invariants
+
 public class Library {
     private final String libraryId;
     private final String name;
